@@ -1,0 +1,32 @@
+<h1>Shipping</h1>
+<div class="row" *ngIf="cart$">
+  <div class="col-md-6">
+    <app-shipping-form [cart]="cart$"></app-shipping-form>
+  </div>
+  <div class="col-md-6">
+    <app-shopping-cart-summary [cart]="cart$"></app-shopping-cart-summary>
+  </div>
+</div>
+<!-- <div class="col-md-6">
+    <div *ngIf="product.title" class="card" style="width: 18rem;">
+      <img [src]="product.imageUrl" class="card-img-top" *ngIf="product.imageUrl">
+      <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">{{product.price | currency:'INR':"symbol"}}</p>
+      </div>
+    </div>
+    <div class="form-group">
+        <label for="contact">Contact</label>
+        <input ngModel #contact="ngModel" name="contact" id="contact" type="text" class="form-control" [minlength]="10" [maxlength]="10"
+          required>
+        <div class="alert alert-danger" *ngIf="contact.touched && contact.invalid">
+
+          <div *ngIf="contact.errors.required">
+            contact no is Required!
+          </div>
+          <div *ngIf="contact.errors.minlength || contact.errors.maxlength">
+            contact no is incoreect!
+          </div>
+        </div>
+      </div>
+  </div>  -->

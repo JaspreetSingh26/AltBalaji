@@ -1,0 +1,24 @@
+{
+  "hosting": {
+    "public": "dist/ecomm",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/ecomm-8269a/us-central1/callback",
+        "function": "callback"
+      },
+      {
+        "source": "/ecomm-8269a/us-central1/checkout",
+        "function": "checkout"
+      }
+    ]
+  }
+}
