@@ -33,7 +33,7 @@
     "install": "^0.12.2",
     "materialize-css": "^1.0.0-rc.2",
     "ng2-validation": "^4.2.0",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
